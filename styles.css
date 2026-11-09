@@ -443,6 +443,14 @@ ul, ol {
 
 /* ---------- Experience ---------- */
 
+.experience-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex-shrink: 0;
+  align-self: center;
+}
+
 .experience-period {
   flex-shrink: 0;
   font-weight: 600;
