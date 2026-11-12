@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="News and updates from Yu-Ying Huo, Ph.D. student in Medical Bioinformatics at Peking University Health Science Center." />
+    <title>News | Yu-Ying Huo</title>
+    <script>
+      (function () {
+        var stored;
+        try { stored = localStorage.getItem('theme'); } catch (e) {}
+        var theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="top">
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <a href="index.html" accesskey="h" title="Yu-Ying's Website (Alt + H)">Yu-Ying's Website</a>
+        </div>
+        <div class="nav-right">
+          <ul id="menu">
+            <li><a href="index.html#about" title="About"><span>About</span></a></li>
+            <li><a href="index.html#publications" title="Publications"><span>Publications</span></a></li>
+            <li><a href="news.html" title="News"><span class="active">News</span></a></li>
+            <li><a href="index.html#experience" title="Experience"><span>Experience</span></a></li>
+            <li><a href="index.html#awards" title="Awards"><span>Awards</span></a></li>
+          </ul>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <div class="academic-home">
+
+        <!-- News -->
+        <section id="news" class="home-section">
+          <h2>News</h2>
+          <div class="home-list">
+            <div class="home-item">
+              <span class="news-date">2026-10-30</span>
+              <span class="news-content"><p>STRAND published in <a href="https://doi.org/10.1093/nar/gkag1054" target="_blank" rel="noopener">Nucleic Acids Research</a> (co-first author).</p></span>
+            </div>
+            <div class="home-item">
+              <span class="news-date">2026-10</span>
+              <span class="news-content"><p>Awarded the Peking University Outstanding Medical Student Scholarship (Third-class).</p></span>
+            </div>
+            <div class="home-item">
+              <span class="news-date">2026-09-16</span>
+              <span class="news-content"><p>SpaMOAL published in <a href="https://doi.org/10.1371/journal.pbio.3003690" target="_blank" rel="noopener">PLOS Biology</a> (co-first author).</p></span>
+            </div>
+            <div class="home-item">
+              <span class="news-date">2026-07</span>
+              <span class="news-content"><p>Gave an academic talk at the 2026 Academic Exchange Conference, Department of Biochemistry and Molecular Biology, Peking University.</p></span>
+            </div>
+            <div class="home-item">
+              <span class="news-date">2024-09-12</span>
+              <span class="news-content"><p>CancerSRT published in <a href="https://doi.org/10.1016/j.jgg.2024.08.012" target="_blank" rel="noopener">Journal of Genetics and Genomics</a> (co-first author).</p></span>
+            </div>
+            <div class="home-item">
+              <span class="news-date">2024-06</span>
+              <span class="news-content"><p>Excited to share that I have officially received my Master's degree in Engineering and was honored for my outstanding thesis.</p></span>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <span>© <a href="index.html">Yu-Ying Huo</a></span>
+      <span>·</span>
+      <span><a href="index.html#about">Back to home</a></span>
+    </footer>
+
+    <script>
+      (function () {
+        var toggle = document.getElementById('theme-toggle');
+        var root = document.documentElement;
+        if (!toggle) return;
+        toggle.addEventListener('click', function () {
+          var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+      })();
+    </script>
+  </body>
+</html>

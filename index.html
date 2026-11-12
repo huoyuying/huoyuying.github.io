@@ -3,23 +3,49 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="YuYing Huo — Ph.D. student in Medical Bioinformatics at Peking University Health Science Center, working on the computational analysis of spatial transcriptomics." />
-    <title>YuYing Huo | Academic Homepage</title>
+    <meta name="description" content="Yu-Ying Huo — Ph.D. student in Medical Bioinformatics at Peking University Health Science Center, working on the computational analysis of spatial transcriptomics." />
+    <title>Yu-Ying Huo | Academic Homepage</title>
+    <script>
+      (function () {
+        var stored;
+        try { stored = localStorage.getItem('theme'); } catch (e) {}
+        var theme = stored || (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      })();
+    </script>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body id="top">
     <header class="header">
       <nav class="nav">
         <div class="logo">
-          <a href="#top" accesskey="h" title="Yuying's Website (Alt + H)">Yuying's Website</a>
+          <a href="#top" accesskey="h" title="Yu-Ying's Website (Alt + H)">Yu-Ying's Website</a>
         </div>
-        <ul id="menu">
-          <li><a href="#about" title="About"><span class="active">About</span></a></li>
-          <li><a href="#publications" title="Publications"><span>Publications</span></a></li>
-          <li><a href="#news" title="News"><span>News</span></a></li>
-          <li><a href="#experience" title="Experience"><span>Experience</span></a></li>
-          <li><a href="#awards" title="Awards"><span>Awards</span></a></li>
-        </ul>
+        <div class="nav-right">
+          <ul id="menu">
+            <li><a href="#about" title="About"><span class="active">About</span></a></li>
+            <li><a href="#publications" title="Publications"><span>Publications</span></a></li>
+            <li><a href="#news" title="News"><span>News</span></a></li>
+            <li><a href="#experience" title="Experience"><span>Experience</span></a></li>
+            <li><a href="#awards" title="Awards"><span>Awards</span></a></li>
+          </ul>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle light/dark mode" title="Toggle light/dark mode">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+        </div>
       </nav>
     </header>
 
@@ -31,13 +57,14 @@
           <div class="profile-content">
             <div class="profile-identity">
               <div class="profile-image">
-                <img draggable="false" src="assets/photo.jpg" alt="YuYing Huo" width="160" height="160" />
+                <img draggable="false" src="assets/photo.jpg" alt="Yu-Ying Huo" width="160" height="160" />
               </div>
               <div class="profile-info">
-                <h1 class="profile-name">YuYing Huo (霍玉莹)</h1>
+                <h1 class="profile-name">Yu-Ying Huo (霍玉莹)</h1>
                 <h2 class="profile-position">Ph.D. Student</h2>
                 <h3 class="profile-affiliation">Peking University Health Science Center</h3>
                 <p class="profile-email"><a href="mailto:760256235@qq.com">760256235@qq.com</a></p>
+                <p class="profile-email"><a href="mailto:huoyuying@bjmu.edu.cn">huoyuying@bjmu.edu.cn</a></p>
                 <div class="social-icons">
                   <a href="https://github.com/huoyuying" target="_blank" rel="noopener noreferrer me" title="GitHub">
                     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56 0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.02 1.75 2.68 1.25 3.33.95.1-.74.4-1.25.72-1.54-2.55-.29-5.23-1.28-5.23-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .96-.31 3.16 1.18a11 11 0 0 1 5.76 0c2.2-1.49 3.16-1.18 3.16-1.18.62 1.59.23 2.76.11 3.05.73.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.05.78 2.12 0 1.53-.01 2.76-.01 3.14 0 .31.21.68.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
@@ -47,7 +74,7 @@
             </div>
             <div class="profile-about">
               <div class="about-content">
-                <p>I am a Ph.D. student in <strong>Medical Bioinformatics</strong> at Peking University Health Science Center, where my research focuses on the <strong>computational analysis of spatial transcriptomics</strong>.</p>
+                <p>I am a Ph.D. student in <strong>Medical Bioinformatics</strong> at Peking University Health Science Center, under the supervision of Dr. <a href="http://bioinfolilab.phasep.pro" target="_blank" rel="noopener">Tingting Li</a>. I received my Master of Science in Engineering degree from the School of Software Engineering at Beijing Jiaotong University, under the supervision of Dr. <a href="https://xiangyuli-lab.github.io/People" target="_blank" rel="noopener">Xiangyu Li</a>.</p>
                 <p>My interests include <strong>subcellular localization modeling</strong>, <strong>spatial domain detection</strong>, <strong>multimodal integration</strong>, and <strong>building spatial omics databases</strong>.</p>
               </div>
             </div>
@@ -66,7 +93,7 @@
               </div>
               <div class="publication-content">
                 <h3 class="publication-title"><a href="https://doi.org/10.1093/nar/gkag1054" target="_blank" rel="noopener">STRAND: a comprehensive subcellular-resolved spatial transcriptome RNA architecture and navigation database</a></h3>
-                <p class="publication-authors">Zhaoxu Wu<sup>*</sup>, <strong>Yuying Huo</strong><sup>*</sup>, Wenqian Xu<sup>*</sup>, Xiangyu Li, Tingting Li</p>
+                <p class="publication-authors">Zhaoxu Wu<sup>*</sup>, <strong>Yu-Ying Huo</strong><sup>*</sup>, Wenqian Xu<sup>*</sup>, Xiangyu Li, Tingting Li</p>
                 <p class="publication-venue"><span class="venue-badge">NAR</span><span class="venue-badge award">NAR Breakthrough Article</span><span>Nucleic Acids Research, 2026</span></p>
                 <div class="publication-description">
                   <p>A subcellular-resolved spatial transcriptome database providing RNA architecture and navigation across cellular and tissue context.</p>
@@ -84,7 +111,7 @@
               </div>
               <div class="publication-content">
                 <h3 class="publication-title"><a href="https://doi.org/10.1371/journal.pbio.3003690" target="_blank" rel="noopener">SpaMOAL is a deep learning method that enables accurate spatial domain identification from multi-omics data</a></h3>
-                <p class="publication-authors">Jinxia Wang<sup>*</sup>, <strong>Yuying Huo</strong><sup>*</sup>, Rui Zhao, Yan Pan, Jianqiang Wu, Han Wang, Xiangyu Li</p>
+                <p class="publication-authors">Jinxia Wang<sup>*</sup>, <strong>Yu-Ying Huo</strong><sup>*</sup>, Rui Zhao, Yan Pan, Jianqiang Wu, Han Wang, Xiangyu Li</p>
                 <p class="publication-venue"><span class="venue-badge">PLOS Biology</span><span>PLOS Biology, 2026, 24(9): e3003690</span></p>
                 <div class="publication-description">
                   <p>A deep learning method that enables accurate spatial domain identification by integrating multi-omics data.</p>
@@ -101,7 +128,7 @@
               </div>
               <div class="publication-content">
                 <h3 class="publication-title"><a href="https://doi.org/10.1016/j.jgg.2024.08.012" target="_blank" rel="noopener">CancerSRT: a spatially resolved transcriptomics database for human cancers</a></h3>
-                <p class="publication-authors"><strong>Yuying Huo</strong><sup>*</sup>, Jiakang Wang<sup>*</sup>, Chengcheng Liu, Jinxia Wang, Chen Wang, Wenbo Guo, Zhiyuan Yuan, Tiantian Guo, Jin Gu, Xiangyu Li</p>
+                <p class="publication-authors"><strong>Yu-Ying Huo</strong><sup>*</sup>, Jiakang Wang<sup>*</sup>, Chengcheng Liu, Jinxia Wang, Chen Wang, Wenbo Guo, Zhiyuan Yuan, Tiantian Guo, Jin Gu, Xiangyu Li</p>
                 <p class="publication-venue"><span class="venue-badge">JGG</span><span>Journal of Genetics and Genomics, 2024, 51(12): 1505-1508</span></p>
                 <div class="publication-description">
                   <p>A database integrating 46 spatially resolved transcriptomic datasets across 14 human cancer types.</p>
@@ -119,7 +146,7 @@
               </div>
               <div class="publication-content">
                 <h3 class="publication-title"><a href="https://doi.org/10.1016/j.jgg.2023.06.005" target="_blank" rel="noopener">Integrating multi-modal information to detect spatial domains of spatial transcriptomics by graph attention network</a></h3>
-                <p class="publication-authors"><strong>Yuying Huo</strong>, Yilang Guo, Jiakang Wang, Huijie Xue, Yujuan Feng, Weizheng Chen, Xiangyu Li</p>
+                <p class="publication-authors"><strong>Yu-Ying Huo</strong>, Yilang Guo, Jiakang Wang, Huijie Xue, Yujuan Feng, Weizheng Chen, Xiangyu Li</p>
                 <p class="publication-venue"><span class="venue-badge">JGG</span><span>Journal of Genetics and Genomics, 2023, 50(9): 720-733</span></p>
                 <div class="publication-description">
                   <p>A graph attention network that integrates multi-modal information to detect spatial domains in spatial transcriptomics.</p>
@@ -151,10 +178,15 @@
               <span class="news-content"><p>SpaMOAL published in <a href="https://doi.org/10.1371/journal.pbio.3003690" target="_blank" rel="noopener">PLOS Biology</a> (co-first author).</p></span>
             </div>
             <div class="home-item">
+              <span class="news-date">2026-07</span>
+              <span class="news-content"><p>Gave an academic talk at the 2026 Academic Exchange Conference, Department of Biochemistry and Molecular Biology, Peking University.</p></span>
+            </div>
+            <div class="home-item">
               <span class="news-date">2024-09-12</span>
               <span class="news-content"><p>CancerSRT published in <a href="https://doi.org/10.1016/j.jgg.2024.08.012" target="_blank" rel="noopener">Journal of Genetics and Genomics</a> (co-first author).</p></span>
             </div>
           </div>
+          <div class="news-more"><a href="news.html">View all news →</a></div>
         </section>
 
         <!-- Experience -->
@@ -209,8 +241,8 @@
             </div>
             <div class="home-item">
               <span class="award-year">2020</span>
-              <span class="award-name">National Scholarship</span>
-              <span class="award-organization">Ministry of Education of China</span>
+              <span class="award-name">National Scholarship for Undergraduate Students</span>
+              <span class="award-organization">Shanxi University</span>
             </div>
           </div>
         </section>
@@ -219,9 +251,22 @@
     </main>
 
     <footer class="footer">
-      <span>© <a href="#top">YuYing Huo</a></span>
+      <span>© <a href="#top">Yu-Ying Huo</a></span>
       <span>·</span>
       <span>Last updated: 2026-11</span>
     </footer>
+
+    <script>
+      (function () {
+        var toggle = document.getElementById('theme-toggle');
+        var root = document.documentElement;
+        if (!toggle) return;
+        toggle.addEventListener('click', function () {
+          var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+          root.setAttribute('data-theme', next);
+          try { localStorage.setItem('theme', next); } catch (e) {}
+        });
+      })();
+    </script>
   </body>
 </html>
